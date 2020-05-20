@@ -1,0 +1,11 @@
+body{
+    background-color: #def4f0;
+} 
+hr {
+    border-style: none;
+    background-color: white;
+    height: 2px;
+}
+h1, h2, h3, h4, h5 {
+    color: #9a1f40;
+}
