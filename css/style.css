@@ -1,11 +1,97 @@
-body{
-    background-color: #def4f0;
-} 
+
 hr {
     border-style: none;
     background-color: white;
     height: 2px;
 }
-h1, h2, h3, h4, h5 {
-    color: #9a1f40;
+
+
+/************* Tag Selectors *************/
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eeeeee;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 8px 0px;
+}
+/************* Class Selectors *************/
+.content-box {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    min-height: 20px;
+    margin: 0;
+    padding: 10px;
+    background-color: #222831;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    min-height: 20px;
+    margin: 10px;
+}
+.rows {
+    flex-direction: column;
+
+}
+.columns {
+    flex-direction: row;
+}
+.fixed-width-100 {
+    width: 100px;
+    flex-wrap: wrap;
+}
+.section-box-rows {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.section-box-columns {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    min-height: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.button {
+    width: fit-content;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: #00adb5;
+    border: none;
+}
+.button:hover {
+    background-color: #22cfd7;
+}
+.content-link {
+    color: #222831;
+    text-decoration: none;
+}
+.content-link:visited {
+    color: #222831;
+    text-decoration: none;
+}
+.section-title {
+    color: #393e46;
+    text-decoration: underline;
+}
+/************* ID Selectors *************/
+#heading {
+    
 }

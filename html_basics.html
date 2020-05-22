@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="content-box">
+        <a class="button content-link" href="./index.html">Home</a>
+        <a class="button content-link" href="./html_basics.html">HTML Basics</a>
+        <a class="button content-link" href="./tips.html">VSCode and Mac Tips</a>
+    </div>
+
+    <div class="section-box-rows">
+        <h3 class="section-title">HTML Basics</h3>
+        <p> This page covers some of the common html elements</p>
+    </div>
+
+    <div class="section-box-rows">
+        <h4>Difference between <em>&lt;em&gt;</em> and <i>&lt;i&gt;</i> tags</h4>
+        <p>Difference between <em>&lt;em&gt;</em> and <i>&lt;i&gt;</i> tags is <em>&lt;em&gt;</em> simply has more
+            meaning</p>
+    </div>
+
+    <div class="section-box-rows">
+        <h4>Lists</h4>
+        <div class="section rows">
+            <div class="section columns">
+                <div class="section rows">
+                    <h5>Unordered list</h5>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="section rows">
+                    <h5>Order list</h5>
+                    <ol type="i">
+                        <li>order item 1</li>
+                        <li>order item 2</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Image</h4>
+        <div class="section rows">
+            <div class="section columns">
+                <div class="section rows">
+                    <h5>Image From External Link</h5>
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQHx1p3PsabcRQ/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=LWCw5AhfcxOdYaZpwMNRg74Ra7Q-yoCJrKYmGNAlEZY"
+                        width="50px" height="50px" alt="My Online Face">
+                </div>
+                <hr>
+                <div class="section rows">
+                    <h5>Image From Local Link</h5>
+                    <img src="./assets/i_Potrait.png" width="50px" height="50px" alt="my local image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Anchors</h4>
+        <div class="section rows">
+            <a href="http://www.aungtunkyaw.com" target="_blank">My Website : Open in New Tab</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Tables</h4>
+        <div class="section columns">
+
+            <div class="section rows">
+                <h5>Data Table</h5>
+                <table border="solid">
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Body data 1</td>
+                            <td>Body data 2</td>
+                        </tr>
+                        <tr>
+                            <td>Body data 1</td>
+                            <td>Body data 2</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                        </tr>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div> 
+            
+            <div class="section rows">
+                <h5>Table as layout</h5>
+                <table cellspacing=20>
+                    <tr>
+                        <td>
+                            <img src="./assets/i_Potrait.png" width="100px" alt="my local image">
+                        </td>
+                        <td>
+                            <p>Aung Tun Kyaw</p>
+                            <p>Application Consultant</p>
+                            <p>Activate Interactive</p>
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Forms And Inputs</h4>
+        <form id="form1" action="mailto:aungtun1992@gmail.com" enctype="text/plain" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label form="form1">text</label>
+                    </td>
+                    <td>
+                        <input type="text" name="text" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">tel</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="tel" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label form="form1">number</label>
+                    </td>
+                    <td>
+                        <input type="number" name="number" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">radio</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">range</label>
+                    </td>
+                    <td>
+                        <input type="range" name="range" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">checkbox</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="checkbox" id="">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label form="form1">color</label></td>
+                    <td>
+                        <input type="color" name="color" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">date</label></td>
+                    <td>
+                        <input type="date" name="date" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">datetime-local</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" name="datetime-local" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">month</label>
+                    </td>
+                    <td>
+                        <input type="month" name="month" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">week</label>
+                    </td>
+                    <td>
+                        <input type="week" name="week" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">file</label>
+                    </td>
+                    <td>
+                        <input type="file" name="file" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">hidden</label>
+                    </td>
+                    <td>
+                        <input type="hidden" name="hidden" id="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">image</label>
+                    </td>
+                    <td>
+                        <input type="image" src="" alt="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">reset</label>
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">button</label>
+                    </td>
+                    <td>
+                        <input type="button" value="Button">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label form="form1">submit</label>
+                    </td>
+                            <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form> 
+    </div>
+</body>
+
+</html>
