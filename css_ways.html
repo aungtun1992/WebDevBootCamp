@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .internal-style-example {
+            background-color: red;
+            margin: 5px;
+        }
+        .main-grey-container {
+            background-color: grey;
+            border-style: solid;
+        }
+        .red-container {
+            display: block;
+            padding: 20px;
+            margin: 20px;
+            border-style: dashed;
+            background-color: red;
+        }
+        .green-container {
+            display: inline-block;
+            padding: 20px;
+            margin: 20px;
+            border-style: dashed;
+            background-color: green;
+        }
+        .yellow-container {
+            display: block;
+            width: 500px;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+            left: 50px;
+            border-style: dashed;
+            background-color: yellow;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="content-box">
+        <a class="button content-link" href="./index.html">Home</a>
+        <a class="button content-link" href="./tips.html">VSCode and Mac Tips</a>
+        <a class="button content-link" href="./html_basics.html">HTML Basics</a>
+        <a class="button content-link" href="./css_ways.html">CSS</a>
+    </div>
+
+    <div class="section-box-rows">
+        <h3 class="section-title">CSS Basics</h3>
+        <p> This page covers some of the common css elements</p>
+    </div>
+
+    <div class="section-box-rows">
+        <h4>How to use CSS</h4>
+        <div class="section rows">
+            <table border="solid">
+                <thead>
+                    <tr>
+                        <th>
+                            Method
+                        </th>
+                        <th>
+                            CODE
+                        </th>
+                        <th>
+                            RESULT
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Inline
+                        </td>
+                        <td>
+                            <img style="margin: 5px" src="./assets/grapes_1f347_code.png" alt="grape_code">
+                        </td>
+                        <td>
+                            <img style="background-color: green; margin: 5px;" src="./assets/grapes_1f347.png"
+                                alt="grape">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Internal System
+                        </td>
+                        <td>
+                            <div style="display: flex; flex-direction: column;">
+                                <img style="margin: 5px" src="./assets/internal_style_code_1.png" alt="grape_code">
+                                <img style="margin: 5px" src="./assets/internal_style_code_2.png" alt="grape_code">
+
+                            </div>
+                        </td>
+                        <td>
+                            <img class="internal-style-example" src="./assets/grapes_1f347.png" alt="grape">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            External System
+                        </td>
+                        <td>
+                            <div style="display: flex; flex-direction: column;">
+                                <img style="margin: 5px" src="./assets/external_css_code_1.png" alt="grape_code">
+                                <img style="margin: 5px" src="./assets/external_css_code_2.png" alt="grape_code">
+                                <img style="margin: 5px" src="./assets/external_css_code_3.png" alt="grape_code">
+                            </div>
+                        </td>
+                        <td>
+                            <img class="external-style-example" src="./assets/grapes_1f347.png" alt="grape">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section-box-rows">
+        <h4>Positioning</h4>
+        <div class="main-grey-container">
+            This is a <b>Box Without Margin and Padding</b>
+            <div class="red-container">
+                .red-container {
+                    display: <b>block</b>;
+                    padding: 20px;
+                    margin: 20px;
+                    background-color: red;
+                }
+            </div>
+            <div class="green-container">
+                .green-container {
+                    display: <b>inline-block</b>;
+                    padding: 20px;
+                    margin: 20px;
+                    border-style: dashed;
+                    background-color: green;
+                }
+            </div>
+            <div class="yellow-container">
+                .yellow-container {
+                    display: block;
+                    width: 500px;
+                    padding: 20px;
+                    margin: 20px;
+                    <b>position: relative;
+                    left: 50px;</b>
+                    border-style: dashed;
+                    background-color: yellow;
+                }
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

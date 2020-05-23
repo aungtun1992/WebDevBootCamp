@@ -1,11 +1,7 @@
-
-hr {
-    border-style: none;
-    background-color: white;
-    height: 2px;
+.external-style-example {
+    background-color: red; 
+    margin: 5px;
 }
-
-
 /************* Tag Selectors *************/
 body {
     display: flex;
@@ -16,6 +12,11 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 8px 0px;
+}
+hr {
+    border-style: none;
+    background-color: white;
+    height: 2px;
 }
 /************* Class Selectors *************/
 .content-box {
@@ -45,6 +46,16 @@ h1, h2, h3, h4, h5, h6 {
 .fixed-width-100 {
     width: 100px;
     flex-wrap: wrap;
+}
+.columns-align-center {
+    align-items: center;
+}
+.rows-align-center {
+    justify-content: center;
+}
+.no-gutter {
+    margin: 0px !important;
+    padding: 0px !important;
 }
 .section-box-rows {
     display: flex;
@@ -91,6 +102,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #393e46;
     text-decoration: underline;
 }
+
+
 /************* ID Selectors *************/
 #heading {
     
