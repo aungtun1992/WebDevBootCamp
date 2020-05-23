@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        .font-size {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-box">
+        <div class="section rows no-gutter">
+            <div class="section columns no-gutter">
+                <a class="button content-link" href="./index.html">Home</a>
+                <a class="button content-link" href="./tips.html">VSCode and Mac Tips</a>
+                <a class="button content-link" href="./html_basics.html">HTML Basics</a>
+                <a class="button content-link" href="./css_ways.html">CSS</a>
+                <a class="button content-link" href="./fonts.html">Fonts</a>
+                <a class="button content-link" href="./css_site/index.html">CSS Styled Example</a>
+            </div>
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h3 class="section-title">Fonts</h3>
+    </div>
+    <div class="section-box-rows">
+        <h4>Font Families</h4>
+        <div class="section rows">
+            There are three types of fonts.
+            <table border="solid">
+                <thead>
+                    <tr>
+                        <td>Generic Family</td>
+                        <td>Font Family</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span style="font-family: serif;">Serif</span></td>
+                        <td>
+                            <span style="font-family: 'Times New Roman', serif;">Serif</span><br>
+                            <span style="font-family: Georgia, Times, serif">Georgia</span>
+                        </td>
+                        <td><span style="font-family: serif;">Serif has small lines at the end of the characters</span>
+                        </td>
+                        <td>
+                            <h1 style="font-family: serif;">F</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: sans-serif;">Sans-serif</span></td>
+                        <td>
+                            <span style="font-family: Arial, Helvetica, sans-serif">Arial</span><br>
+                            <span style="font-family: Verdana, Geneva, Tahoma, sans-serif">Verdana</span>
+                        </td>
+                        <td><span style="font-family: sans-serif;">"Sans" means without <br>- these fonts do not have
+                                the lines at the ends of characters</span></td>
+                        <td>
+                            <h1 style="font-family: sans-serif;">F</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span style="font-family: monospace;">Monospace</span></td>
+                        <td>
+                            <span style="font-family: 'Courier New', Courier, monospace">Courier New</span><br>
+                        </td>
+                        <td><span style="font-family: serif;">All monospace characters have the same width<br>
+                                Good for code reading.</span></td>
+                        <td>
+                            <h1 style="font-family: monospace;">F</h1>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Compatibility</h4>
+        <div class="section rows">
+            All the fonts are rendered by the browser and all the font families does not have the guarantee to work in
+            all the systems.<br>
+            In order to resolve this, we should try to use web-safe fonts.<br>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">Web Safe Fonts</a>
+                </li>
+                <li>
+                    <a href="https://www.cssfontstack.com/">Font Stacks</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Embedding Fonts</h4>
+        <div class="section rows">
+            In order to maximize the Compatibility, we can also embed fonts.
+            <ul>
+                <li>
+                    <a href="https://fonts.google.com/">Google Fonts</a>
+                </li>
+            </ul>
+            <img style="display: block; width: 100%;" src="./assets/googlefonts.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="section-box-rows">
+        <h4>Font Families</h4>
+
+        <p>
+            em used to means 1em is the size of the width of M.
+        </p> 
+        <p>NOTE: when using dynamic font size, values can be inherited and add up on child component</p>
+        <p>e.g. if parent already have 200%, and child have 200% also, child will end up with total 400%</p>
+
+        <p>to prevent this use rem (root em)</p>
+
+        <div class="section rows">
+            <table border="solid" class="font-size">
+                <thead>
+                    <tr>
+                        <td>Font size type</td>
+                        <td>Equalavant Px</td>
+                        <td>Dynamic/Static</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>px</td>
+                        <td>1px = 1px</td>
+                        <td>Static</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>100% = 16px</td>
+                        <td>Dynamic</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>1em = 16px</td>
+                        <td>Dynamic</td>
+                    </tr>
+                    <tr>
+                        <td>rem</td>
+                        <td>1rem = 16px</td>
+                        <td>Dynamic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</html>
